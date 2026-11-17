@@ -1,6 +1,6 @@
 {
   "name": "@lykling/pi-vision",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "On-demand vision tool (see) for the Pi coding agent: text models delegate image understanding to a configurable vision model.",
   "keywords": [
     "pi-package",
