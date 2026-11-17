@@ -1,0 +1,50 @@
+{
+  "name": "@lykling/pi-vision",
+  "version": "0.1.0",
+  "description": "On-demand vision tool (see) for the Pi coding agent: text models delegate image understanding to a configurable vision model.",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "vision",
+    "glm",
+    "coding-agent"
+  ],
+  "license": "MIT",
+  "author": "lykling <lykling.lyk@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lykling/pi-vision.git"
+  },
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test \"test/*.test.ts\""
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^1.5.2",
+    "typebox": "^1.4.7",
+    "typescript": "^5.9.3"
+  },
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
